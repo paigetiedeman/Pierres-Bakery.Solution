@@ -43,5 +43,9 @@ namespace BakeryOrder
         Main();
       }
     }
+    
   }
 }
+      // WIP: total
+      // int orderTotal = ((newBread.BreadOrder()) + (newPastries.PastryOrder()));
+      // Console.WriteLine($"Your total is ${orderTotal}");
