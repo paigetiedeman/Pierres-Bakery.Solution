@@ -49,5 +49,14 @@ namespace PierresBakery.Tests
       int breadOrder = newBread.BreadOrder();
       Assert.AreEqual(breadCost, breadOrder);
     }
+    [TestMethod]
+    public void GetBreadOrder_GetBreadOrder3_Int()
+    {
+      int breadCount = 3;
+      int breadCost = 10;
+      Bread newBread = new Bread(breadCount);
+      int breadOrder = newBread.BreadOrder();
+      Assert.AreEqual(breadCost, breadOrder);
+    }
   }
 }
