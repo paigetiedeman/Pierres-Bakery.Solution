@@ -16,7 +16,8 @@ namespace PierresBakery.Models
 
     public int PastryOrder()
     {
-      
+      int total = PastryCount * PastryCost;
+      return total;
     }
   }
 }
