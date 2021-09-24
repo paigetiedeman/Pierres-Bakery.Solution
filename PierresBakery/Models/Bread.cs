@@ -13,5 +13,10 @@ namespace PierresBakery.Models
       BreadCount = breadCount;
       BreadCost = 5;
     }
+    public int BreadOrder()
+    {
+      int total = BreadCount * BreadCost;
+      return total;
+    }
   }
 }
