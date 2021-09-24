@@ -16,20 +16,29 @@ namespace PierresBakery.Models
 
     public int PastryOrder()
     {
-      if (PastryCount % 3 == 0)
+      if (PastryCount < 3)
       {
-      int total = ((PastryCount / 3) * 5);
-      return total;
+        int total = PastryCount * PastryCost;
+        return total;
+      }
+      else if (PastryCount % 3 == 0)
+      {
+        int total = ((PastryCount / 3) * 5);
+        return total;
       } 
       else 
       {
-      int total = PastryCount * PastryCost;
-      return total;
+        int total = (PastryCount * PastryCost) - 1;
+        return total;
       }
     }
   }
 }
-// 1 = 2 - 1*2  
-// 3 = 5 - 3*2 - 3/3
-// 4 = 7 - 4*2 
+// y = 7
+// x = 4
+// b = 2
+// a = ?
+// y = xb + a
+// 7 = 4*2 - 1 
 // 
+// 9 = 5*2 -1
