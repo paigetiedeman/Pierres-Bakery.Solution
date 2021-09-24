@@ -1,6 +1,6 @@
 # Pierre's Bakery
 
-#### This is a console application using C# that let's users order from a bakery.
+#### This is a console application using C# that lets users order from a bakery.
 
 #### _By Paige Tiedeman_
 
@@ -13,7 +13,7 @@
 
 ## Description
 
-This console application prompts the user to specify how many loaves of bread and how many pastries they would like to order from Pierre's. Bread is $5/loaf with a deal of buy 2 get 1 free and Pastry's are $2 or 3 for $5.
+This console application prompts the user to specify how many loaves of bread and how many pastries they would like to order from Pierre's. Bread is $5/loaf with a deal of buy 2 get 1 free and Pastry's are 1 for $2 or 3 for $5.
 
 ## Installation Requirements
 
@@ -32,7 +32,7 @@ This console application prompts the user to specify how many loaves of bread an
 
 ## Known Bugs
 
-* _N/A_
+* _No bugs but application has separate order for pastry and bread_
 
 ## License
 

@@ -22,7 +22,8 @@ namespace BakeryOrder
         string breadNumber = Console.ReadLine();
         int breadOrder = int.Parse(breadNumber);
         Bread newBread = new Bread(breadOrder);
-        Console.WriteLine($"That will be ${newBread.BreadOrder()}");
+        Console.WriteLine($"| That will be ${newBread.BreadOrder()} |");
+        Console.WriteLine("-----------------------");
         Main();
       }
       else if (choice == "pastries" || choice == "pastry")
@@ -32,7 +33,8 @@ namespace BakeryOrder
         string pastryNumber = Console.ReadLine();
         int pastryOrder = int.Parse(pastryNumber);
         Pastry newPastry = new Pastry(pastryOrder);
-        Console.WriteLine($"That will be ${newPastry.PastryOrder()}");
+        Console.WriteLine($"| That will be ${newPastry.PastryOrder()} |");
+        Console.WriteLine("-----------------------");
         Main();
       }
       else 
