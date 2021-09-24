@@ -25,8 +25,19 @@ namespace BakeryOrder
         Console.WriteLine($"That will be ${newBread.BreadOrder()}");
         Main();
       }
-      else
+      else if (choice == "pastries" || choice == "pastry")
       {
+        Console.WriteLine("Our promotion today is Buy 1 for $2 or 3 for $5!");
+        Console.WriteLine("How many would you like?");
+        string pastryNumber = Console.ReadLine();
+        int pastryOrder = int.Parse(pastryNumber);
+        Pastry newPastry = new Pastry(pastryOrder);
+        Console.WriteLine($"That will be ${newPastry.PastryOrder()}");
+        Main();
+      }
+      else 
+      {
+        Console.WriteLine("That is not a valid input please enter either 'bread' or 'pastries'!");
         Main();
       }
     }
