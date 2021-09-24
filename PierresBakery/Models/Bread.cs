@@ -29,4 +29,3 @@ namespace PierresBakery.Models
   }
 }
 
-// / 3 or % 3 = 0
