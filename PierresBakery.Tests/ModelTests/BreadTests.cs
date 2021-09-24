@@ -17,20 +17,28 @@ namespace PierresBakery.Tests
     [TestMethod]
     public void GetBreadCount_ReturnsBreadCount_Int()
     {
-      int breadcount = 1;
-      Bread newBread = new Bread(breadcount);
+      int breadCount = 1;
+      Bread newBread = new Bread(breadCount);
       int count = newBread.BreadCount;
-      Assert.AreEqual(breadcount, count);
+      Assert.AreEqual(breadCount, count);
     }
     [TestMethod]
     public void SetBreadCount_SetBreadCount_Int()
     {
-      int breadcount = 1;
-      Bread newBread = new Bread(breadcount);
-      int breadcounttwo = 2;
-      newBread.BreadCount = breadcounttwo;
+      int breadCount = 1;
+      Bread newBread = new Bread(breadCount);
+      int breadCountTwo = 2;
+      newBread.BreadCount = breadCountTwo;
       int count = newBread.BreadCount;
-      Assert.AreEqual(breadcounttwo, count);
+      Assert.AreEqual(breadCountTwo, count);
+    }
+    [TestMethod]
+    public void GetBreadCost_GetBreadCost_Int()
+    {
+    int breadCost = 5;
+    Bread newBread = new Bread(breadCost);
+    int cost = newBread.BreadCost;
+    Assert.AreEqual(breadCost, cost);
     }
   }
 }
