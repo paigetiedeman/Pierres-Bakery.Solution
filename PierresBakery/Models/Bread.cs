@@ -15,8 +15,18 @@ namespace PierresBakery.Models
     }
     public int BreadOrder()
     {
+      if (BreadCount % 3 == 0)
+      {
+      int promoTotal = (BreadCount * BreadCost)- ((BreadCount / 3) * BreadCost);
+      return promoTotal;
+      }
+      else 
+      {
       int total = BreadCount * BreadCost;
       return total;
+      }
     }
   }
 }
+
+// / 3 or % 3 = 0
