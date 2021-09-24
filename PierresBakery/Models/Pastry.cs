@@ -28,17 +28,9 @@ namespace PierresBakery.Models
       } 
       else 
       {
-        int total = (PastryCount * PastryCost) - 1;
+        int total = ((PastryCount * PastryCost) - 1);
         return total;
       }
     }
   }
 }
-// y = 7
-// x = 4
-// b = 2
-// a = ?
-// y = xb + a
-// 7 = 4*2 - 1 
-// 
-// 9 = 5*2 -1
