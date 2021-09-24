@@ -6,10 +6,12 @@ namespace PierresBakery.Models
   public class Bread
   {
     public int BreadCount { get; set; }
+    public int BreadCost {get; set; }
 
-    public Bread(int breadcount)
+    public Bread(int breadCount)
     {
-      BreadCount = breadcount;
+      BreadCount = breadCount;
+      BreadCost = 5;
     }
   }
 }
